@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Reey', sans-serif;
+  src: url(../fonts/ReeyRegular.woff2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #525556;
+}
+
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
