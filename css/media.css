@@ -1,0 +1,140 @@
+@media(max-width:867.98px) {
+  body.lock{
+    overflow: hidden;
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+
+  .wrapper::before {
+    content: '';
+    background-color: #ffffff83;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .header {
+    position: relative;
+    z-index: 50;
+  }
+
+  .header__logo {
+    position: relative;
+    z-index: 5;
+    margin-left: 0;
+  }
+
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 36px;
+    height: 25px;
+    z-index: 5;
+  }
+
+  .header__burger::before,
+  .header__burger::after,
+  .header__burger span {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: #525456;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .header__burger::before {
+    top: 0;
+  }
+
+  .header__burger::after {
+    bottom: 0;
+  }
+
+  .header__burger span {
+    top: 11px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .header__burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 11px;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 11px;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    background-color: #a8aaacf8;
+    padding: 150px 15px 0 0;
+    overflow: auto;
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu__list {
+    display: block;
+    text-align: right;
+  }
+
+  .menu__item {
+    margin-bottom: 40px;
+  }
+
+  .menu__link {
+    font-size: 32px;
+    color: #3f4e44;
+  }
+
+  .home__inner {
+    position: relative;
+    z-index: 5;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .home__descr {
+    color: #627e66;
+  }
+
+  .home__social {
+    text-align: center;
+  }
+}
+
+@media(max-width:500.98px) {
+  .home__title {
+    font-size: calc(50px + (80 - 50) * ((100vw - 320px) / (500 - 320)));
+  }
+  .home__descr{
+    font-size: calc(30px + (45 - 30) * ((100vw - 320px) / (500 - 320)));
+  }
+  .home__text{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (500 - 320)));
+  }
+}

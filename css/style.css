@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Reey', sans-serif;
+  font-family: 'Reey';
   src: url(../fonts/ReeyRegular.woff2);
 }
 
@@ -13,8 +13,21 @@ body {
   color: #525556;
 }
 
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background-color: #92999b;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #2f3536;
+}
+
 .container {
   max-width: 1430px;
   margin: 0 auto;
   padding: 0 15px;
 }
+
+
+
